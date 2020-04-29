@@ -2,6 +2,11 @@ from selenium.webdriver.common.by import By
 
 class BasePageLocators():
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+    BASKET_BUTTON=(By.CSS_SELECTOR,".btn-group a.btn.btn-default")
+
+class BasketPageLocators():
+    MESSAGE_ABOUT_EMPTY_BASKET=(By.CSS_SELECTOR,"#content_inner")
+    BASKET_ITEM=(By.CSS_SELECTOR,".basket-items")
 
 class MainPageLocators():
     pass
@@ -16,5 +21,7 @@ class ProductPageLocators():
     PRODUCT=(By.CSS_SELECTOR,"div.product_main h1")
     MESSAGE_ABOUT_ADDING = (By.CSS_SELECTOR, "div.alertinner ")
     MESSAGE_ABOUT_PRICE = (By.CSS_SELECTOR, ".alert-info .alertinner strong")
+
+
     
     
